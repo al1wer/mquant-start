@@ -83,3 +83,21 @@ footer { border-top: 1px solid var(--line); margin-top: 48px; padding: 22px 0 40
   header { flex-direction: column; align-items: flex-start; }
   th, td { padding: 8px 6px; }
 }
+.btn {
+  display: inline-block;
+  padding: 10px 18px;
+  border: 1px solid var(--accent);
+  background: var(--accent);
+  color: #0d120f;
+  font-weight: 600;
+  font-size: 15px;
+  text-decoration: none;
+  border-radius: 4px;
+}
+.btn:hover { background: #a9c6b0; color: #0d120f; }
+.btn.secondary { background: transparent; color: var(--accent); }
+.btn.secondary:hover { background: var(--bg-2); color: #cfe0d2; }
+.pay-box { border: 1px solid var(--line); background: var(--bg-2); padding: 20px; margin: 20px 0; max-width: 560px; }
+.pay-box h2 { margin-top: 0; }
+.status { color: var(--muted); font-size: 15px; min-height: 1.6em; }
+.status.err { color: #e0a0a0; }
