@@ -1,1 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Checkout — MQuant</title>
+  <meta name="description" content="Subscribe to an MQuant plan. Payment is processed by Paddle, the merchant of record.">
+  <meta name="robots" content="noindex">
+  <meta name="referrer" content="strict-origin-when-cross-origin">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <a class="brand" href="index.html">MQuant</a>
+    <nav>
+      <a href="index.html#plans">Plans</a>
+      <a href="terms.html">Terms</a>
+      <a href="privacy.html">Privacy</a>
+      <a href="refund.html">Refunds</a>
+    </nav>
+  </header>
+  <main>
+    <p class="tag">Checkout</p>
+    <h1>Subscribe to MQuant</h1>
+    <p class="lede">Monthly subscription, renewing until you cancel. Payment is taken by Paddle, the merchant of record; applicable tax is shown before you pay.</p>
 
+    <div class="pay-box" id="plan-box" hidden>
+      <h2 id="plan-name"></h2>
+      <p class="price" id="plan-price"></p>
+      <p id="plan-desc"></p>
+      <p><button class="btn" id="pay-btn" type="button">Continue to payment</button></p>
+      <p class="status" id="status" role="status"></p>
+    </div>
+
+    <div id="chooser" hidden>
+      <h2>Choose a plan</h2>
+      <div class="grid">
+        <article class="plan"><h3>Starter</h3><p class="price">$29 <span>/ month</span></p><p><a class="btn" href="pay.html?plan=starter">Choose Starter</a></p></article>
+        <article class="plan"><h3>Terminal</h3><p class="price">$59 <span>/ month</span></p><p><a class="btn" href="pay.html?plan=terminal">Choose Terminal</a></p></article>
+        <article class="plan"><h3>Desk</h3><p class="price">$149 <span>/ month</span></p><p><a class="btn" href="pay.html?plan=desk">Choose Desk</a></p></article>
+      </div>
+    </div>
+
+    <noscript><p class="note">The payment form needs JavaScript. Please enable it, or write to <a href="mailto:mquant@mquant.org">mquant@mquant.org</a>.</p></noscript>
+
+    <p class="status">By continuing you agree to the <a href="terms.html">Terms</a>. See the <a href="privacy.html">Privacy notice</a> and the <a href="refund.html">Refund note</a>. You can cancel any time; access continues until the end of the paid period.</p>
+  </main>
+  <footer>
+    <p>MQuant · probability notebook · research software · no orders, no client funds, no performance promise.</p>
+    <p><a href="terms.html">Terms</a> · <a href="privacy.html">Privacy</a> · <a href="refund.html">Refunds</a> · <a href="mailto:mquant@mquant.org">mquant@mquant.org</a></p>
+  </footer>
+  <script src="https://cdn.paddle.com/paddle/v2/paddle.js"></script>
+  <script src="pay.js"></script>
+</body>
+</html>
