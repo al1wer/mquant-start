@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>MQuant — personal probability notebook</title>
+  <meta name="description" content="MQuant is a personal research notebook run by a private individual. It shows probability sketches on closed price bars. It is not a broker, fund, or advisory firm, and this page does not take payment.">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <a class="brand" href="index.html">MQuant</a>
+    <nav>
+      <a href="#about">About</a>
+      <a href="#method">Method</a>
+      <a href="#plans">Plans</a>
+      <a href="terms.html">Terms</a>
+      <a href="privacy.html">Privacy</a>
+      <a href="refund.html">Refunds</a>
+    </nav>
+  </header>
+  <main>
+    <p class="tag">Personal research notes · not a financial firm</p>
+    <h1>A notebook for probability sketches on closed bars.</h1>
+    <p class="lede">MQuant is a small research interface kept by a private individual. It draws an ensemble of hypothetical paths, a few diagnostics, and — only sometimes — a level sketch on the last closed bar. It does not place orders, hold client money, or tell anyone what to buy or sell.</p>
+    <p class="note">This website is information only. There are no accounts, no checkout, and no payment buttons here. Nothing on this page is investment, tax, or legal advice.</p>
+
+    <h2 id="about">What this is</h2>
+    <div class="grid">
+      <article class="card">
+        <h3>An individual, not a company</h3>
+        <p>The operator is a private person publishing their own research tool. No corporation is offered as the seller of this page, and no financial-services license is claimed.</p>
+      </article>
+      <article class="card">
+        <h3>Notes, not instructions</h3>
+        <p>A pass can end as a note, a watch, or silence. Silence is a normal result when the notebook does not see a sketch worth writing down.</p>
+      </article>
+      <article class="card">
+        <h3>Closed bars, not a live book</h3>
+        <p>Sketches refer to the last closed bar. They are not a quote from an order book and they are not an instruction to enter a market.</p>
+      </article>
+      <article class="card">
+        <h3>You decide</h3>
+        <p>The interface does not execute trades and does not promise a profit, a durable advantage, or a particular outcome.</p>
+      </article>
+    </div>
+
+    <h2 id="method">How a pass is organized</h2>
+    <ol class="steps">
+      <li><strong>Instrument.</strong> A ticker, a horizon, and a path count are chosen in the sidebar of the notebook.</li>
+      <li><strong>One pass.</strong> The ensemble draws paths, levels, and diagnostics together.</li>
+      <li><strong>Read the spread.</strong> Path probabilities sit next to a sketch of hypothetical levels on the last closed bar.</li>
+      <li><strong>After the bar closes.</strong> A note is attached to that closed bar. It is not a live entry.</li>
+    </ol>
+
+    <h2>What is inside</h2>
+    <div class="grid">
+      <article class="card">
+        <h3>Overview</h3>
+        <p>One reading, a score, and the thresholds that separate a note from silence.</p>
+      </article>
+      <article class="card">
+        <h3>Path cone</h3>
+        <p>A spread of outcomes from a mixture of models, not a single assumed path.</p>
+      </article>
+      <article class="card">
+        <h3>Level sketch</h3>
+        <p>Hypothetical levels on a closed bar, drawn only when a note is published. Not a quotation and not an order.</p>
+      </article>
+      <article class="card">
+        <h3>Path summary</h3>
+        <p>A model average across simulated paths. Labeled as a calculation, not as a forecast of profit.</p>
+      </article>
+      <article class="card">
+        <h3>News window</h3>
+        <p>A high-impact news window can withdraw a note before the event.</p>
+      </article>
+      <article class="card">
+        <h3>History check</h3>
+        <p>The same rules can be read back over past bars before anyone risks their own capital.</p>
+      </article>
+      <article class="card">
+        <h3>Volume context</h3>
+        <p>High- and low-volume nodes as background for levels, not as a command.</p>
+      </article>
+      <article class="card">
+        <h3>Sessions and neighbors</h3>
+        <p>Asia, London, and New York as session context, plus related instruments so one ticker is not read alone.</p>
+      </article>
+    </div>
+
+    <h2>How it differs from a trading desk</h2>
+    <ul>
+      <li>Several simple models are mixed. An average of past bars is not treated as if it were the whole distribution.</li>
+      <li>The notebook may publish nothing. That is a valid output.</li>
+      <li>Levels and path probabilities are shown together, on a closed bar.</li>
+      <li>Calibration notes (including a Kolmogorov–Smirnov check and a deflated Sharpe figure, on plans that include them) are visible before a note is written.</li>
+      <li>Where a public quote is shown, it may be delayed. The page does not claim a direct exchange feed.</li>
+    </ul>
+
+    <h2 id="plans">Plans, listed for reference</h2>
+    <p>Prices below describe the research notebook. They are not an offer you can accept on this website. No card is collected here.</p>
+    <p>A seven-day look at the fuller notebook — up to 10 runs a day — is part of the product description. A card is not required for that look.</p>
+
+    <div class="grid">
+      <article class="plan">
+        <p class="tag">Starter</p>
+        <h3>Starter</h3>
+        <p class="price">$29 <span>/ month</span></p>
+        <p>A first look at the method on one instrument.</p>
+        <ul>
+          <li>5 analysis runs a day</li>
+          <li>1 instrument a day</li>
+          <li>Models: geometric Brownian motion and bootstrap</li>
+          <li>Deflated Sharpe figure: not included</li>
+          <li>KS calibration: not included</li>
+          <li>Level sketch: levels only</li>
+          <li>Note history: 7 days</li>
+          <li>Calibration view: not included</li>
+          <li>Market context: not included</li>
+          <li>10 notes a month</li>
+        </ul>
+      </article>
+      <article class="plan">
+        <p class="tag">Terminal</p>
+        <h3>Terminal</h3>
+        <p class="price">$59 <span>/ month</span></p>
+        <p>The full ensemble and calibration view for daily reading.</p>
+        <ul>
+          <li>30 analysis runs a day</li>
+          <li>10 instruments a day</li>
+          <li>Models: full ensemble</li>
+          <li>Deflated Sharpe figure: included</li>
+          <li>KS calibration: included</li>
+          <li>Level sketch: full grid</li>
+          <li>Note history: full</li>
+          <li>Calibration view: included</li>
+          <li>Market context: included</li>
+          <li>50 notes a month</li>
+        </ul>
+      </article>
+      <article class="plan">
+        <p class="tag">Desk</p>
+        <h3>Desk</h3>
+        <p class="price">$149 <span>/ month</span></p>
+        <p>More instruments and a higher daily run limit than Terminal, for heavier personal use.</p>
+        <ul>
+          <li>150 analysis runs a day</li>
+          <li>A wider daily instrument allowance than Terminal</li>
+          <li>Models: full ensemble</li>
+          <li>Deflated Sharpe figure: included</li>
+          <li>KS calibration: included</li>
+          <li>Level sketch: full grid</li>
+          <li>Note history: full</li>
+          <li>Calibration view: included</li>
+          <li>Market context: included</li>
+          <li>A higher monthly note allowance than Terminal</li>
+        </ul>
+      </article>
+    </div>
+
+    <table>
+      <thead>
+        <tr><th></th><th>Starter · $29</th><th>Terminal · $59</th><th>Desk · $149</th></tr>
+      </thead>
+      <tbody>
+        <tr><td>Runs / day</td><td>5</td><td>30</td><td>150</td></tr>
+        <tr><td>Instruments / day</td><td>1</td><td>10</td><td>Wider allowance</td></tr>
+        <tr><td>Models</td><td>GBM + bootstrap</td><td>Full ensemble</td><td>Full ensemble</td></tr>
+        <tr><td>Deflated Sharpe</td><td>No</td><td>Yes</td><td>Yes</td></tr>
+        <tr><td>KS calibration</td><td>No</td><td>Yes</td><td>Yes</td></tr>
+        <tr><td>Level sketch</td><td>Levels only</td><td>Full grid</td><td>Full grid</td></tr>
+        <tr><td>History</td><td>7 days</td><td>Full</td><td>Full</td></tr>
+        <tr><td>Calibration view</td><td>No</td><td>Yes</td><td>Yes</td></tr>
+        <tr><td>Market context</td><td>No</td><td>Yes</td><td>Yes</td></tr>
+        <tr><td>Notes / month</td><td>10</td><td>50</td><td>Higher allowance</td></tr>
+      </tbody>
+    </table>
+
+    <h2>Operator</h2>
+    <p>MQuant is operated by a private individual. This site does not present a company, a partnership, or a financial institution. For a question about these pages, write to <a href="mailto:support@mquant.org">support@mquant.org</a>.</p>
+    <p>If a paid subscription is ever offered, card handling and sales tax are intended to sit with a merchant of record (Paddle), not with this individual and not on this page. See the <a href="terms.html">Terms</a>, <a href="privacy.html">Privacy notice</a>, and <a href="refund.html">Refund note</a>.</p>
+  </main>
+  <footer>
+    <p>MQuant · personal probability notebook · information only · no orders, no client funds, no performance promise.</p>
+    <p><a href="terms.html">Terms</a> · <a href="privacy.html">Privacy</a> · <a href="refund.html">Refunds</a> · <a href="mailto:support@mquant.org">support@mquant.org</a></p>
+    <p>Last updated 20 October 2026.</p>
+  </footer>
+</body>
+</html>
