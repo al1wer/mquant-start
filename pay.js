@@ -3,7 +3,7 @@
 
   // Public client-side token: safe to ship in the page (it can only open checkouts).
   var CLIENT_TOKEN = 'live_1a292d53182bbb5e10b1571ddf2';
-  var RETURN_URL = 'https://mquant.org/?paid=1';
+  var RETURN_URL = 'https://mquant.org/?checkout=success';
 
   var PLANS = {
     starter:  { name: 'Starter',  price: '$29',  priceId: 'pri_01m5d3rnk2yt6h5zwzg1hh1j6n', desc: 'A first look at the method on one instrument.' },
